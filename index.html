@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Breakout</title>
+
+    <link rel = "stylesheet" type = "text/css" href = "styles/game.css">
+</head>
+<body onload="MyGame.manager.initialize()">
+    <div id = "game">
+        <div id = "main-menu" class = "screen">
+            <br>
+            <h1>Midterm</h1>
+            <br>
+            <ul class = "menu">
+                <li><button id = "id-new-game">New Game</button></li>
+                <li><button id = "id-high-scores">High Scores</button></li>
+                <li><button id = "id-credits">Credits</button></li>
+            </ul>
+        </div>
+        <div id = "game-play" class = "screen">
+            <canvas id = "id-canvas" width = "960" height = "540"></canvas>
+        </div>
+        <div id = "high-scores" class = "screen">
+            <h1>High Scores</h1>
+            <ol id = "id-high-scores-list">
+
+            </ol>
+            <ul class = "menu">
+                <li><button id = "id-high-scores-back">Back</button></li>
+            </ul>
+        </div>
+        <div id = "credits" class = "screen">
+            <h1>Credits</h1>
+            <p>Developed By:</p>
+            <p>Matthew Larsen</p>
+            <ul class = "menu">
+                <li><button id = "id-credits-back">Back</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts/Loader.js"></script>
+
+    <script src="scripts/Utilities/Math.js"></script>
+    <script src="scripts/Utilities/Random.js"></script>
+
+    <script src="scripts/Input/Keyboard.js"></script>
+
+    <script src="scripts/Components/Types.js"></script>
+
+    <script src="scripts/Components/Text.js"></script>
+    <script src="scripts/Components/Sprite.js"></script>
+    <script src="scripts/Components/ParticleSystem.js"></script>
+
+    <script src="scripts/Components/Entity.js"></script>
+
+    <script src="scripts/Components/Platform.js"></script>
+    <script src="scripts/Components/Character.js"></script>
+    <script src="scripts/Components/EffectFalling.js"></script>
+
+    <script src="scripts/Rendering/Core.js"></script>
+
+    <script src="scripts/Rendering/Background.js"></script>
+    <script src="scripts/Rendering/Text.js"></script>
+    <script src="scripts/Rendering/Sprite.js"></script>
+    <script src="scripts/Rendering/ParticleSystem.js"></script>
+
+    <script src="scripts/Rendering/Time.js"></script>
+    <script src="scripts/Rendering/GameOver.js"></script>
+    <script src="scripts/Rendering/Platform.js"></script>
+    <script src="scripts/Rendering/Character.js"></script>
+
+    <script src="scripts/Model.js"></script>
+
+    <script src="scripts/Screens/Manager.js"></script>
+
+    <script src="scripts/Screens/Credits.js"></script>
+    <script src="scripts/Screens/GamePlay.js"></script>
+    <script src="scripts/Screens/HighScores.js"></script>
+    <script src="scripts/Screens/MainMenu.js"></script>
+</body>
+</html>
